@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEC9B"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="303dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <Button
+        android:id="@+id/memberName2"
+        android:layout_width="292dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Button"
+        android:textColor="@color/colorDark"
+        app:layout_constraintBottom_toTopOf="@+id/memberName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memberName1" />
+
+    <Button
+        android:id="@+id/memberName3"
+        android:layout_width="292dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Button"
+        android:textColor="@color/colorDark"
+        app:layout_constraintBottom_toTopOf="@+id/memberName4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memberName2" />
+
+    <Button
+        android:id="@+id/memberName4"
+        android:layout_width="292dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Button"
+        android:textColor="@color/colorDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memberName3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/memberName1"
+        android:layout_width="292dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Button"
+        android:textColor="@color/colorDark"
+        app:layout_constraintBottom_toTopOf="@+id/memberName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="178dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="16dp"
+        android:text="wassup"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorDark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/memberName1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_width="81dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="285dp"
+        android:backgroundTint="@color/colorAlert"
+        android:text="Quit"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="77dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Score"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/quitButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
