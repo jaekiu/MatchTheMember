@@ -25,6 +25,7 @@
         android:id="@+id/logo"
         android:layout_width="492dp"
         android:layout_height="338dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toTopOf="@+id/startButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
